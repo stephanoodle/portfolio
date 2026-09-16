@@ -36,26 +36,6 @@ layout: default
   </div>
 </section>
 
-<section class="block" id="writing">
-  <div class="wrap">
-    <h2>Writing samples</h2>
-    <p class="lead">Help center articles I wrote, live on <a href="https://support.dnsimple.com/">support.dnsimple.com</a>.</p>
-    <div class="grid2">
-      {% for group in site.data.writing %}
-      <div class="group">
-        <span class="label">{{ group.group }}</span>
-        <p class="note">{{ group.note }}</p>
-        <ul>
-          {% for article in group.articles %}
-          <li><a href="{{ article.url }}">{{ article.title }}</a><span>{{ article.summary }}</span></li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <section class="block" id="kind-words">
   <div class="wrap">
     <h2>Kind words</h2>
@@ -74,6 +54,26 @@ layout: default
         <blockquote>“{{ item.quote }}”</blockquote>
         <p class="quote-by"><strong>{{ item.name }}</strong> · {{ item.role }}<br>{{ item.context }}</p>
       </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block" id="writing">
+  <div class="wrap">
+    <h2>Writing samples</h2>
+    <p class="lead">Help center articles I wrote, live on <a href="https://support.dnsimple.com/">support.dnsimple.com</a>.</p>
+    <div class="grid2">
+      {% for group in site.data.writing %}
+      <div class="group">
+        <span class="label">{{ group.group }}</span>
+        <p class="note">{{ group.note }}</p>
+        <ul>
+          {% for article in group.articles %}
+          <li><a href="{{ article.url }}">{{ article.title }}</a><span>{{ article.summary }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
       {% endfor %}
     </div>
   </div>
