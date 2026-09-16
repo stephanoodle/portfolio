@@ -1,0 +1,138 @@
+:root {
+  --paper: #FBFCFC;
+  --ground: #F1F3F5;
+  --ink: #1C2733;
+  --muted: #5B6775;
+  --rule: #D6DCE2;
+  --accent: #245A68;
+  --accent-soft: #E3EEF0;
+  --sans: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --cond: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #18212B;
+    --ground: #111820;
+    --ink: #E3E8ED;
+    --muted: #9AA6B2;
+    --rule: #2C3845;
+    --accent: #7FBFCC;
+    --accent-soft: #1E3139;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--sans);
+}
+
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+
+.site-header,
+main,
+.site-footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font: 600 0.95rem var(--cond);
+  letter-spacing: 0.02em;
+}
+.site-header a { color: var(--ink); text-decoration: none; }
+.site-header .back { color: var(--accent); font-weight: 500; }
+
+main {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 720px) {
+  main { padding: 2.75rem 3rem 3rem; }
+}
+
+h1, h2, h3 { font-family: var(--cond); line-height: 1.2; }
+h1 { font-size: 2rem; font-weight: 600; margin: 0 0 0.5rem; }
+h2 { font-size: 1.35rem; font-weight: 600; margin: 2.25rem 0 0.75rem; }
+
+/* Home */
+.intro .role {
+  margin: 0 0 1.25rem;
+  color: var(--accent);
+  font: 500 1.05rem var(--cond);
+  letter-spacing: 0.02em;
+}
+.intro .lede { margin: 0 0 1rem; font-size: 1.1rem; }
+.intro .meta-line { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.card a {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.card a:hover, .card a:focus-visible { background: var(--accent-soft); }
+.card-title { display: block; font: 600 1.1rem/1.3 var(--cond); margin-bottom: 0.25rem; }
+.card-summary { display: block; color: var(--muted); font-size: 0.95rem; }
+
+/* Case studies */
+.prose h1 { font-size: 1.85rem; }
+.prose h1 + p { color: var(--muted); font-size: 0.95rem; }
+.prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+.prose p, .prose li { overflow-wrap: anywhere; }
+.prose li { margin-bottom: 0.4rem; }
+.prose code {
+  font: 0.88em var(--mono);
+  background: var(--accent-soft);
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+}
+.prose table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.93rem;
+}
+.prose th, .prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  min-width: 9rem;
+}
+.prose th { font-family: var(--cond); font-weight: 600; }
+
+.site-footer {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

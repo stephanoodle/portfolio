@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="intro">
+  <h1>Stephanie Coulter</h1>
+  <p class="role">Support Engineer · Documentation &amp; AI Knowledge</p>
+  <p class="lede">I work on the layer between what a company has written and what a reader actually gets: help center structure, terminology, the rules AI follows when drafting, and measurement of whether the right answer reaches the person asking, whether that's a customer or an AI assistant.</p>
+  <p class="meta-line">Remote · Authorized to work in the US and Canada</p>
+</section>
+
+<section aria-labelledby="work">
+  <h2 id="work">Case studies</h2>
+  <ul class="cards">
+    {% assign order = "controlled-vocabulary,help-center-restructure,ai-writing-rules,measuring-answer-quality,registrar-compliance-docs,ticket-queue-analysis" | split: "," %}
+    {% for slug in order %}
+      {% assign path = "case-studies/" | append: slug | append: ".md" %}
+      {% assign study = site.pages | where: "path", path | first %}
+      {% if study %}
+      <li class="card">
+        <a href="{{ study.url | relative_url }}">
+          <span class="card-title">{{ study.title }}</span>
+          <span class="card-summary">{{ study.description }}</span>
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>

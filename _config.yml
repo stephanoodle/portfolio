@@ -1,0 +1,16 @@
+title: Stephanie Coulter
+description: Support engineer working on documentation, terminology, and whether answers are right, for people and for AI.
+lang: en
+
+# Project site at stephanoodle.github.io/portfolio. Set to "" if it moves to its own domain.
+baseurl: "/portfolio"
+
+# GitHub Pages turns links to .md files into links to the rendered pages.
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+
+exclude:
+  - README.md
