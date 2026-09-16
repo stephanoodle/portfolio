@@ -25,8 +25,6 @@
     --purple: #2B1B4D;
     --purple-text: #BFA8F2;
   }
-  /* Light text on a yellow highlight is hard to read: color the words instead. */
-  .hero h1 span { background: none; color: var(--yellow); padding: 0; margin: 0; }
 }
 
 * { box-sizing: border-box; }
@@ -169,3 +167,9 @@ section.block { padding-block: 72px 8px; }
 .prose table { display: block; overflow-x: auto; border-collapse: collapse; margin: 20px 0 28px; font-size: 15px; border-top: 1px solid var(--line); }
 .prose th, .prose td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--line); min-width: 9rem; }
 .prose th { font: 600 12px/1.4 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--purple-text); }
+
+/* Dark mode headline. Light text on a yellow highlight is hard to read, so the
+   words turn yellow instead. Kept last so it wins over the highlight rule above. */
+@media (prefers-color-scheme: dark) {
+  .hero h1 span { background: none; color: var(--yellow); padding: 0; margin: 0; }
+}
