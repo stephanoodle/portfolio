@@ -1,0 +1,54 @@
+# Help center articles I wrote, live on support.dnsimple.com.
+# Grouped by the kind of reading they're for.
+
+- group: How-to guides
+  note: Steps for getting one thing done.
+  articles:
+    - title: Enable DNSSEC
+      url: https://support.dnsimple.com/articles/enabling-dnssec/
+      summary: Prerequisites, configuration steps, and what to expect after activation.
+    - title: Implement a Gradual DMARC Policy
+      url: https://support.dnsimple.com/articles/implementing-a-gradual-dmarc-policy/
+      summary: Moving safely from monitoring to quarantine to reject.
+    - title: Manage TLSA Records
+      url: https://support.dnsimple.com/articles/manage-tlsa-record/
+      summary: Add, update, and remove a TLSA record.
+
+- group: Explanations
+  note: Building understanding before anyone clicks anything.
+  articles:
+    - title: SPF, DKIM, and DMARC Alignment
+      url: https://support.dnsimple.com/articles/understanding-spf-dkim-dmarc-alignment/
+      summary: Why authentication can pass and still fail alignment.
+    - title: What Is a TLSA Record?
+      url: https://support.dnsimple.com/articles/tlsa-record/
+      summary: Tying a TLS certificate to a domain name through DNS.
+    - title: CAA Records and SSL Certificates
+      url: https://support.dnsimple.com/articles/caa-records-ssl-certificates/
+      summary: A common, quiet cause of certificate issuance failures.
+
+- group: Reference and troubleshooting
+  note: Exact values, and what to check when something breaks.
+  articles:
+    - title: TLSA Record Format and Components Reference
+      url: https://support.dnsimple.com/articles/tlsa-record-format/
+      summary: The structure and canonical form of a TLSA record.
+    - title: Troubleshoot DNSSEC
+      url: https://support.dnsimple.com/articles/troubleshooting-dnssec-configurations/
+      summary: DS records, DNSKEYs, RRSIGs, and NSEC checks.
+    - title: Troubleshoot Email Authentication
+      url: https://support.dnsimple.com/articles/troubleshooting-email-authentication/
+      summary: Diagnosing SPF, DKIM, and DMARC failures from headers and DNS.
+
+- group: Compliance and hubs
+  note: Policy turned into action, and pages that orient a reader.
+  articles:
+    - title: NIS2 Contact Email Verification
+      url: https://support.dnsimple.com/articles/nis2-contact-verification/
+      summary: What the EU directive asks of domain contacts, and how it differs from ICANN validation.
+    - title: Domain Contacts at DNSimple
+      url: https://support.dnsimple.com/articles/domain-contacts-at-dnsimple/
+      summary: A category hub, and the reference example for every pillar page on the site.
+    - title: SSL Certificate Glossary
+      url: https://support.dnsimple.com/articles/ssl-certificates-glossary/
+      summary: Certificate terms defined in plain language.

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Measuring whether documentation answers correctly"
 description: "Built an evaluation from real customer questions, and let the data correct my conclusions twice."
+tags: ["Evaluation", "Search", "AI retrieval"]
 ---
 
 # Case study: measuring whether documentation answers correctly

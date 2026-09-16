@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Turning registry rules into steps customers can follow"
 description: "Turned ICANN, NIS2, and registry changes into steps customers can follow."
+tags: ["Compliance", "ICANN", "NIS2"]
 ---
 
 # Case study: turning registry rules into steps customers can follow

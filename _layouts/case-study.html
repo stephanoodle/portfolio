@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="case">
+  <div class="wrap narrow">
+    <a class="back" href="{{ '/#work' | relative_url }}">← All case studies</a>
+    {% if page.tags %}
+    <ul class="chips" aria-label="Topics">
+      {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+    <aside class="case-end">
+      <p>Want to talk about this work?</p>
+      <a class="button" href="mailto:stephanie@geekazoid.net">Email me</a>
+      <a class="button ghost" href="{{ '/#work' | relative_url }}">More case studies</a>
+    </aside>
+  </div>
+</article>

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Rules for AI-drafted documentation, and why rules aren't enough"
 description: "Wrote the rules AI follows when drafting documentation, then audited them and found why rules aren't enough."
+tags: ["AI governance", "Docs as code"]
 ---
 
 # Case study: rules for AI-drafted documentation, and why rules aren't enough

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Restructuring a help center around what readers are trying to do"
 description: "Restructured nine categories of a 500-article help center around what readers are trying to do."
+tags: ["Information architecture", "Diátaxis"]
 ---
 
 # Case study: restructuring a help center around what readers are trying to do

@@ -1,0 +1,29 @@
+- role: Support Engineer
+  org: DNSimple
+  when: 2023 – now
+  what: Support, documentation, AI writing rules, and registrar compliance for a DNS hosting provider and ICANN-accredited registrar.
+
+- role: Customer Support Specialist
+  org: Brilliant.org
+  when: 2022 – 2023
+  what: Learner support by email, chat, and social; app bug triage with engineering. Part-time.
+
+- role: Customer Support Manager
+  org: Brio Systems
+  when: 2020 – 2022
+  what: Built the knowledge base, trained new hires, and handled protected health information for a COVID-19 testing provider.
+
+- role: Customer Support Specialist
+  org: Loop Support
+  when: 2020 – 2022
+  what: Contracted support for Brilliant.org and Goldbelly; wrote macros and reported on support trends. Part-time.
+
+- role: Service desk and contact center roles
+  org: KeyBank, Sherwin-Williams, Michaels
+  when: 2017 – 2020
+  what: Phone, chat, and email support at volume, in ServiceNow and Salesforce.
+
+- role: Patient access and patient care
+  org: University Hospitals Cleveland
+  when: 2011 – 2017
+  what: Emergency department registration and behavioral health care. HIPAA-compliant records under pressure.

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Reading a support queue for retention"
 description: "Applied churn and data-quality frameworks to twenty months of support tickets."
+tags: ["Support data", "Retention"]
 ---
 
 # Case study: reading a support queue for retention

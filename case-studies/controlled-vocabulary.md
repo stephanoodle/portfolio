@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: case-study
 title: "Matching the help center to the words customers use"
 description: "Decided the terms a help center uses, checked them against how customers write, and measured search before and after."
+tags: ["Terminology", "Search", "Evaluation"]
 ---
 
 # Case study: matching the help center to the words customers use

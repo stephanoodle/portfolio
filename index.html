@@ -2,28 +2,178 @@
 layout: default
 ---
 
-<section class="intro">
-  <h1>Stephanie Coulter</h1>
-  <p class="role">Support Engineer · Documentation &amp; AI Knowledge</p>
-  <p class="lede">I work on the layer between what a company has written and what a reader actually gets: help center structure, terminology, the rules AI follows when drafting, and measurement of whether the right answer reaches the person asking, whether that's a customer or an AI assistant.</p>
-  <p class="meta-line">Remote · Authorized to work in the US and Canada</p>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Support · Documentation · AI knowledge</p>
+    <h1>Hi, I'm Stephanie. I make sure the right answer reaches the person&nbsp;asking.</h1>
+    <p class="lede">Whether someone is typing into a help center search box or asking an AI assistant, the answer comes from the same documentation. I write that documentation, organize it, set the rules AI follows when drafting it, and measure whether it actually works, starting from real customer questions.</p>
+    <p class="hero-actions">
+      <a class="button" href="mailto:stephanie@geekazoid.net">Say hello</a>
+      <a class="button ghost" href="#work">See my work</a>
+      <a class="text-link" href="https://www.linkedin.com/in/stephanie-j-coulter/">LinkedIn →</a>
+    </p>
+    <p class="hero-meta">Remote · Authorized to work in the US and Canada</p>
+  </div>
 </section>
 
-<section aria-labelledby="work">
-  <h2 id="work">Case studies</h2>
-  <ul class="cards">
-    {% assign order = "controlled-vocabulary,help-center-restructure,ai-writing-rules,measuring-answer-quality,registrar-compliance-docs,ticket-queue-analysis" | split: "," %}
-    {% for slug in order %}
-      {% assign path = "case-studies/" | append: slug | append: ".md" %}
-      {% assign study = site.pages | where: "path", path | first %}
-      {% if study %}
-      <li class="card">
-        <a href="{{ study.url | relative_url }}">
-          <span class="card-title">{{ study.title }}</span>
-          <span class="card-summary">{{ study.description }}</span>
-        </a>
+<section class="what" aria-labelledby="what-title">
+  <div class="wrap">
+    <h2 id="what-title" class="visually-hidden">What I do</h2>
+    <ul class="pillars">
+      <li>
+        <span class="pillar-mark" aria-hidden="true">01</span>
+        <h3>Documentation people can use</h3>
+        <p>Help centers organized around what readers are trying to do, in the words customers actually use. Written in Markdown, reviewed like code.</p>
       </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+      <li>
+        <span class="pillar-mark" aria-hidden="true">02</span>
+        <h3>AI that answers correctly</h3>
+        <p>The rules AI follows when drafting, and evaluations built from real support tickets that show whether the right answer surfaces.</p>
+      </li>
+      <li>
+        <span class="pillar-mark" aria-hidden="true">03</span>
+        <h3>Support where accuracy matters</h3>
+        <p>Domain transfers, DNSSEC, registrar compliance, payment disputes. Work where a wrong answer has consequences, and the steps have to hold up.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="work" class="band" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="work-title">Case studies</h2>
+      <p>The problem, what I decided, what shipped, and what the results can and can't tell you.</p>
+    </div>
+    <ul class="cases">
+      {% assign order = "controlled-vocabulary,help-center-restructure,ai-writing-rules,measuring-answer-quality,registrar-compliance-docs,ticket-queue-analysis" | split: "," %}
+      {% for slug in order %}
+        {% assign path = "case-studies/" | append: slug | append: ".md" %}
+        {% assign study = site.pages | where: "path", path | first %}
+        {% if study %}
+        <li class="case-card{% if forloop.first %} featured{% endif %}">
+          <a href="{{ study.url | relative_url }}">
+            {% if study.tags %}<span class="chips small">{% for tag in study.tags limit: 2 %}<span>{{ tag }}</span>{% endfor %}</span>{% endif %}
+            <span class="case-title">{{ study.title }}</span>
+            <span class="case-summary">{{ study.description }}</span>
+            <span class="case-more" aria-hidden="true">Read the case study →</span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="writing" aria-labelledby="writing-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="writing-title">Writing samples</h2>
+      <p>Help center articles I wrote, live on <a href="https://support.dnsimple.com/">support.dnsimple.com</a>. Each kind of article does a different job, so here are a few of each.</p>
+    </div>
+    <div class="writing-groups">
+      {% for group in site.data.writing %}
+      <div class="writing-group">
+        <h3>{{ group.group }}</h3>
+        <p class="group-note">{{ group.note }}</p>
+        <ul>
+          {% for article in group.articles %}
+          <li>
+            <a href="{{ article.url }}">{{ article.title }}</a>
+            <span>{{ article.summary }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="kind-words" class="band warm" aria-labelledby="kind-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="kind-title">Kind words</h2>
+      <p>From people I've worked with, in their written recommendations.</p>
+    </div>
+    <div class="quotes">
+      {% for item in site.data.kind_words %}
+      <figure class="quote{% if forloop.first %} lead-quote{% endif %}">
+        <blockquote><p>{{ item.quote }}</p></blockquote>
+        <figcaption>
+          <strong>{{ item.name }}</strong>
+          <span>{{ item.role }}</span>
+          <span class="context">{{ item.context }}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div class="about-story">
+      <h2 id="about-title">About me</h2>
+      <p>I didn't take a straight line into tech, and I'm glad. Before support I worked in hospitals, first as a patient care assistant on a behavioral health unit, then registering patients in an emergency department. That's documentation where accuracy, protocol, and deadlines matter, with people who are often having a very bad day.</p>
+      <p>It turned out to be the same work in a different building. From IT service desks to a COVID-19 testing company to a domain registrar, the thread has stayed the same: get the details right, write them down so the next person can too, and stay kind while you do it.</p>
+      <p>Today I split my time between the support queue and the layer underneath it: the documentation, terminology, and AI rules that everyone, human or machine, answers from.</p>
+    </div>
+    <aside class="about-facts">
+      <h3>Certifications</h3>
+      <ul class="plain">
+        <li>AI for Customer Success Certified: Advanced <span>Customer Success Collective, 2026</span></li>
+        <li>Customer Success Metrics Certified: Masters <span>Customer Success Collective, 2026</span></li>
+        <li>Customer Success Certified: Core <span>Customer Success Collective, 2026</span></li>
+        <li>AI Foundations for Everyone <span>IBM, 2024</span></li>
+        <li>Google Project Management <span>Google, 2023</span></li>
+      </ul>
+      <h3>Education</h3>
+      <ul class="plain">
+        <li>A.A.B., Information Technology — Networking Software <span>Cuyahoga Community College · Summa cum laude</span></li>
+        <li>A.A., General Studies <span>Cuyahoga Community College · Summa cum laude</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="experience" class="band" aria-labelledby="experience-title">
+  <div class="wrap experience-grid">
+    <div>
+      <h2 id="experience-title">Experience</h2>
+      <ol class="timeline">
+        {% for job in site.data.experience %}
+        <li>
+          <span class="when">{{ job.when }}</span>
+          <div>
+            <h3>{{ job.role }} <span class="org">· {{ job.org }}</span></h3>
+            <p>{{ job.what }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <aside class="skills">
+      <h2 class="h-small">Skills and tools</h2>
+      <h3>Documentation</h3>
+      <ul class="chips"><li>Docs as code</li><li>Git and GitHub</li><li>Markdown</li><li>Diátaxis</li><li>Controlled vocabulary</li><li>Knowledge bases</li></ul>
+      <h3>AI</h3>
+      <ul class="chips"><li>Claude</li><li>Cursor</li><li>AGENTS.md and rules files</li><li>Retrieval evaluation</li><li>llms.txt</li><li>AI search</li></ul>
+      <h3>Domains and DNS</h3>
+      <ul class="chips"><li>DNS</li><li>DNSSEC</li><li>Domain transfers</li><li>SSL/TLS</li><li>ICANN and NIS2 compliance</li><li>Email authentication</li></ul>
+      <h3>Support tools</h3>
+      <ul class="chips"><li>Front</li><li>Zendesk</li><li>Help Scout</li><li>Jira</li><li>Stripe</li><li>Airtable</li></ul>
+    </aside>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap narrow center">
+    <h2>Let's talk</h2>
+    <p>If you're working on documentation, support, or getting AI to answer correctly, I'd love to hear about it.</p>
+    <p class="hero-actions center">
+      <a class="button" href="mailto:stephanie@geekazoid.net">Email me</a>
+      <a class="button ghost" href="https://www.linkedin.com/in/stephanie-j-coulter/">Connect on LinkedIn</a>
+    </p>
+  </div>
 </section>
