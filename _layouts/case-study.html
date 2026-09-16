@@ -1,21 +1,12 @@
 ---
 layout: default
 ---
-<article class="case">
-  <div class="wrap narrow">
+<article class="case-page">
+  <div class="wrap">
     <a class="back" href="{{ '/#work' | relative_url }}">← All case studies</a>
-    {% if page.tags %}
-    <ul class="chips" aria-label="Topics">
-      {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
-    </ul>
-    {% endif %}
+    {% if page.tags %}<span class="label">{{ page.tags | join: " · " }}</span>{% endif %}
     <div class="prose">
       {{ content }}
     </div>
-    <aside class="case-end">
-      <p>Want to talk about this work?</p>
-      <a class="button" href="mailto:stephanie@geekazoid.net">Email me</a>
-      <a class="button ghost" href="{{ '/#work' | relative_url }}">More case studies</a>
-    </aside>
   </div>
 </article>
