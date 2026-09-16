@@ -22,9 +22,11 @@
     --line: #2D2740;
     --bg: #15121E;
     --tint: #1C1828;
-    --purple: #241640;
+    --purple: #2B1B4D;
     --purple-text: #BFA8F2;
   }
+  /* Light text on a yellow highlight is hard to read: color the words instead. */
+  .hero h1 span { background: none; color: var(--yellow); padding: 0; margin: 0; }
 }
 
 * { box-sizing: border-box; }
