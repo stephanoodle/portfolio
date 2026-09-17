@@ -18,7 +18,7 @@ layout: default
     <h2>Case studies</h2>
     <p class="lead">The problem, what I decided, what shipped, and what the results can and can't tell you.</p>
     <div class="grid2">
-      {% assign order = "technical-tickets-with-ai,controlled-vocabulary,help-center-restructure,ai-writing-rules,measuring-answer-quality,registrar-compliance-docs,ticket-queue-analysis" | split: "," %}
+      {% assign order = "technical-tickets-with-ai,ticket-queue-analysis,controlled-vocabulary,measuring-answer-quality,ai-writing-rules,help-center-restructure,registrar-compliance-docs" | split: "," %}
       {% for slug in order %}
         {% assign path = "case-studies/" | append: slug | append: ".md" %}
         {% assign study = site.pages | where: "path", path | first %}
