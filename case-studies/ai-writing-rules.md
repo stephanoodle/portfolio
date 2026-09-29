@@ -19,19 +19,19 @@ AI assistants follow whatever rule files are in the repository. Without them, dr
 
 ## What I did
 
-**1. Wrote the rules.** The rules cover how an article should read, how it should be structured, and the workflow checkpoints around drafting and review, along with updated contribution guidelines and a pull request template ([#1815](https://github.com/dnsimple/dnsimple-support/pull/1815)). They name the specific patterns that make text read as generated, with a rewrite for each.
+**1. Wrote the rules.** The rules cover how an article should read, how it should be structured, and the workflow checkpoints around drafting and review, along with updated contribution guidelines and a pull request template. They name the specific patterns that make text read as generated, with a rewrite for each.
 
-**2. Applied them to existing content.** Rules that only apply to new articles leave the rest of the site sounding different. I rewrote the DNS, DNSSEC, and Domains and Transfers categories against them ([#1816](https://github.com/dnsimple/dnsimple-support/pull/1816)), and kept tightening the rules as patterns showed up, such as banning em and en dashes ([#1865](https://github.com/dnsimple/dnsimple-support/pull/1865)).
+**2. Applied them to existing content.** Rules that only apply to new articles leave the rest of the site sounding different. I rewrote the DNS, DNSSEC, and Domains and Transfers categories against them, and kept tightening the rules as patterns showed up, such as banning em and en dashes.
 
-**3. Added a content policy.** The policy requires verifying every product claim, price, limit, and syntax example against the app, the developer documentation, or a subject-matter expert ([#2025](https://github.com/dnsimple/dnsimple-support/pull/2025)).
+**3. Added a content policy.** The policy requires verifying every product claim, price, limit, and syntax example against the app, the developer documentation, or a subject-matter expert.
 
 **4. Audited the rules I'd written.** The structure was sound: one source of truth, other files pointing to it rather than restating it. Three findings were not:
 
-- **The policy contradicted the repository.** It said the site had no `llms.txt` file and shouldn't gain one. The site had one, live in production, and I had rewritten it two months earlier. Both files were mine. Better I found it than someone else did. I corrected the policy to say the file exists, that Google's guidance covers only Google, and that measurement should decide whether to expand it ([#2151](https://github.com/dnsimple/dnsimple-support/pull/2151)).
+- **The policy contradicted the repository.** It said the site had no `llms.txt` file and shouldn't gain one. The site had one, live in production, and I had rewritten it two months earlier. Both files were mine. Better I found it than someone else did. I corrected the policy to say the file exists, that Google's guidance covers only Google, and that measurement should decide whether to expand it.
 - **The verification rule had no mechanism behind it.** Nothing checked whether claims were verified, and nothing measured whether the documentation produced correct answers. The evidence was my own cleanup commits: accuracy fixes made by hand, after the fact.
 - **Rules only reach people who have the latest copy.** An assistant working from an out-of-date copy of the repository applies out-of-date rules, including the rule that says to update first. That makes weaker drafts a distribution problem, not a skill problem, and it can only be fixed on the server side, for example by requiring branches to be current before merging.
 
-**5. Moved rules toward things that check themselves.** The audit's conclusion was to convert prose rules into automation wherever possible: linting for the mechanical rules, and measurement for the verification rule. The measurement became the retrieval evaluation in [Measuring whether documentation answers correctly](measuring-answer-quality.md). The same approach put a preferred-terms table into the rules in September ([#2148](https://github.com/dnsimple/dnsimple-support/pull/2148)), so AI drafts start with the right terminology instead of being corrected later.
+**5. Moved rules toward things that check themselves.** The audit's conclusion was to convert prose rules into automation wherever possible: linting for the mechanical rules, and measurement for the verification rule. The measurement became the retrieval evaluation in [Measuring whether documentation answers correctly](measuring-answer-quality.md). The same approach put a preferred-terms table into the rules in September, so AI drafts start with the right terminology instead of being corrected later.
 
 ## What shipped
 

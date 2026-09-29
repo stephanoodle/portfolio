@@ -25,20 +25,20 @@ Getting it wrong has real costs. A missed verification can suspend a domain. A w
 
 | Change | Documentation |
 |---|---|
-| ICANN domain contact validation | Rewrote the validation article ([#1620](https://github.com/dnsimple/dnsimple-support/pull/1620)) |
-| DENIC `.DE` contact accuracy under the EU's NIS2 directive | Verification requirements, dates, and consequences ([#1862](https://github.com/dnsimple/dnsimple-support/pull/1862)), then post-registration holder verification ([#2003](https://github.com/dnsimple/dnsimple-support/pull/2003)) |
-| NIS2 contact email verification | A new article ([#2004](https://github.com/dnsimple/dnsimple-support/pull/2004)) |
-| Registration data policy | WHOIS Privacy explanations updated ([#2055](https://github.com/dnsimple/dnsimple-support/pull/2055)) |
-| Shorter SSL certificate lifetimes | An announcement ([#1806](https://github.com/dnsimple/dnsimple-support/pull/1806)), then corrected renewal notice windows once the change took effect ([#2115](https://github.com/dnsimple/dnsimple-support/pull/2115)) |
-| `.IS` transfers, which use contact handles instead of authorization codes | Corrected wording and steps ([#2140](https://github.com/dnsimple/dnsimple-support/pull/2140)) |
+| ICANN domain contact validation | Rewrote the [validation article](https://support.dnsimple.com/articles/icann-domain-validation/) |
+| DENIC `.DE` contact accuracy under the EU's NIS2 directive | Verification requirements, dates, and consequences, then post-registration holder verification, in the [.DE article](https://support.dnsimple.com/articles/domains-de/) |
+| NIS2 contact email verification | A [new article](https://support.dnsimple.com/articles/nis2-contact-verification/) |
+| Registration data policy | [WHOIS Privacy explanations](https://support.dnsimple.com/articles/what-is-whois-privacy/) updated |
+| Shorter SSL certificate lifetimes | An [announcement](https://support.dnsimple.com/articles/announcement-ssl-certificate-validity-changes/), then corrected [renewal notice windows](https://support.dnsimple.com/articles/expiring-product-email-notifications/) once the change took effect |
+| `.IS` transfers, which use contact handles instead of authorization codes | Corrected wording and steps in the [.IS article](https://support.dnsimple.com/articles/domains-is/) |
 
-**2. Checked the documentation against the product.** A policy article can be accurate about the rule and still wrong about the product. When a customer reported that the account ownership article told them to do something that led straight to an error, I traced the behavior to the application code, confirmed the article had the prerequisite backwards, named the exact error they would hit, and gave the three ways around it ([#2099](https://github.com/dnsimple/dnsimple-support/pull/2099)).
+**2. Checked the documentation against the product.** A policy article can be accurate about the rule and still wrong about the product. When a customer reported that the account ownership article told them to do something that led straight to an error, I traced the behavior to the application code, confirmed the article had the prerequisite backwards, named the exact error they would hit, and gave the three ways around it in the [article](https://support.dnsimple.com/articles/transfer-account-ownership/).
 
 **3. Kept the TLD-specific rules where customers look.** Country-code domains each have their own rules. Those went into the article for that TLD, with the general list of TLDs updated so the difference was visible before a customer started, not after something failed.
 
 ## What shipped
 
-Documentation for ICANN, NIS2, DENIC, and certificate authority changes, plus TLD-specific requirements, all in the public [dnsimple-support](https://github.com/dnsimple/dnsimple-support) repository.
+Documentation for ICANN, NIS2, DENIC, and certificate authority changes, plus TLD-specific requirements, all live on the [DNSimple help center](https://support.dnsimple.com/).
 
 ## Why this background matters
 

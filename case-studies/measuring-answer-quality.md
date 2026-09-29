@@ -31,7 +31,7 @@ Documentation teams ship articles, but rarely know whether the right article rea
 - **A minimum match length** changed nothing
 - **Indexing the summary field alone** did best of the six configurations, and the full bundle did worse than that one change on its own
 
-**5. Checked the queries against real traffic, and corrected myself again.** My test queries averaged four words. Six months of search analytics showed real searches average under two, most of them one word. On realistic queries, the summary-field change was flat to slightly negative. So the pull request for it stayed in draft and was never merged ([#2073](https://github.com/dnsimple/dnsimple-support/pull/2073)).
+**5. Checked the queries against real traffic, and corrected myself again.** My test queries averaged four words. Six months of search analytics showed real searches average under two, most of them one word. On realistic queries, the summary-field change was flat to slightly negative. So the pull request for it stayed in draft and was never merged.
 
 The analytics had their own problems: about a third of the logged "searches" weren't searches at all, but page paths and half-typed words. Anyone reading that dashboard would have drawn the wrong conclusions about what customers look for.
 

@@ -49,12 +49,10 @@ The ticket search also turned up two gaps no article covered: an error message c
 
 ## What shipped
 
-All in the public [dnsimple-support](https://github.com/dnsimple/dnsimple-support) repository:
-
-- [**#2148**](https://github.com/dnsimple/dnsimple-support/pull/2148) — a preferred-terms table in the writing rules that AI-assisted drafting follows, so new articles start with the right terms
-- [**#2149**](https://github.com/dnsimple/dnsimple-support/pull/2149) — the rewrites across 13 articles: *authorization code* with its aliases, *move* for account-to-account, a new section for the unexplained error, and the old interface label named once. No URLs changed, and existing links to renamed sections still work
-- [**#2147**](https://github.com/dnsimple/dnsimple-support/pull/2147) — a deprecated product name removed from the billing article
-- [**#2150**](https://github.com/dnsimple/dnsimple-support/pull/2150) — exact-match search pins for short queries that fuzzy matching still ranked badly
+- A preferred-terms table in the writing rules that AI-assisted drafting follows, so new articles start with the right terms
+- The rewrites across 13 [help center](https://support.dnsimple.com/) articles: *authorization code* with its aliases, *move* for account-to-account, a new section for the unexplained error, and the old interface label named once. No URLs changed, and existing links to renamed sections still work
+- A deprecated product name removed from the [billing article](https://support.dnsimple.com/articles/understanding-invoice/)
+- Exact-match search pins for short queries that fuzzy matching still ranked badly
 
 ## Results
 
