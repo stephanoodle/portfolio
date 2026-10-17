@@ -34,7 +34,7 @@ Go to **[lookup.icann.org](https://lookup.icann.org)** and enter your domain. Yo
 - **The status codes.** `redemptionPeriod` or `pendingDelete` means it was deleted after expiring and is close to being lost. `clientTransferProhibited` is a normal lock and nothing to worry about.
 - **Usually not the registrant's details.** Most are now hidden for privacy. The lookup usually gives a link or web form for contacting the registrant through the registrar instead, which is one way to reach a developer who has stopped answering. The registrar won't tell a stranger who the registrant is, but if it's you, they can confirm it once you've proved who you are.
 
-Write down what you find, with the date. It's the start of your evidence.
+Document what you find, with the date. It's the start of your evidence.
 
 ---
 
@@ -116,6 +116,6 @@ Once your domain is back, work through this list. Some of it takes minutes, and 
 - **Turn on auto-renew**, and keep a payment card on file that won't expire soon.
 - **Leave the transfer lock on.** Unlock it only when you're moving the domain.
 - **Let developers in as users, not owners.** Most registrars let you share access to the account or its DNS settings without handing it over.
-- **Write it down:** the registrar, the account email, who has access, and when it renews. Keep it where the next person will find it.
+- **Document it:** the registrar, the account email, who has access, and when it renews. Keep it where the next person will find it.
 
 A domain is the address for your website and the backbone of your email. It's worth more care than most people give it, until the day it goes missing.
