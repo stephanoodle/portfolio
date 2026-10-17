@@ -9,9 +9,9 @@ tags: ["Guide", "Domains"]
 
 **Stephanie Coulter · October 2026**
 
-Your website is down, your email has stopped, or you've just found out that the person who set up your domain years ago is the only one who can log in to it. This guide is for small business owners in that spot. It covers the four ways businesses usually lose a domain, what to do in each case, and what to set up so it doesn't happen again.
+Your website is down, your email has stopped, or you've just found out that the person who set up your domain years ago is the only one who can log in to the account it's registered in. This guide is for small business owners in that spot. It covers the four ways businesses usually lose a domain, what to do in each case, and what to set up so it doesn't happen again.
 
-I've worked on the registrar side of these cases for years. The most useful thing to know is that **the domain's rights belong to whoever is named on the registration**, not to whoever paid for it or built your website. Most of what follows is about proving that's you, or becoming that person.
+I've worked on the registrar side of these cases for years. The most useful thing to know is that **the rights to a domain belong to its registrant**, the contact named on its registration, not to whoever paid for it or built your website. Most of what follows is about proving you're the registrant, or becoming it.
 
 *This is general information, not legal advice. Rules differ for country domains like .ca or .co.uk. Each one follows its own registry's policy.*
 
@@ -19,11 +19,11 @@ I've worked on the registrar side of these cases for years. The most useful thin
 
 ## First, two words that matter
 
-**The registrant** is the person or business named on the domain's registration record. In policy terms, they hold the registration. They have the right to get the code that moves it to another registrar, and to restore it if it's deleted after expiring.
+**The registrant** is the contact named on the domain's registration record. That contact always has a person's name, and it can also have an organization, such as your business. In policy terms, the registrant holds the registration. They have the right to get the code that moves it to another registrar, and to restore it if it's deleted after expiring.
 
 **The account holder** is whoever can log in to the account at the registrar, the company the domain is registered through. The account holder handles the day-to-day: renewals, settings, and DNS. Often that's the same person as the registrant. When a domain gets stuck, it's usually because they're not.
 
-**Which one are you?** That decides almost everything. If the registration names your business and someone else controls the account, you're in a strong position. If it names your developer, you're in a weaker one, and you may need their cooperation or a lawyer.
+**Which one are you?** That decides almost everything. If the registrant is you, someone at your business, or your business itself, and someone else controls the account, you're in a strong position. If the registrant is your developer, with nothing on the record tying it to your business, you're in a weaker one, and you may need their cooperation or a lawyer.
 
 ## Look up your domain
 
@@ -46,7 +46,7 @@ This is the most common case. Someone registered the domain for you, in their ow
 - **A move into an account you own at the same registrar.** Registrars call this an account change or a push. It's usually quick and free.
 - **The transfer code**, sometimes called an auth code or EPP code, so you can move the domain to a registrar of your choice. Ask them to unlock it at the same time. A domain usually can't move to another registrar within 60 days of being registered or transferred.
 
-**Either way, check the registrant afterwards.** Moving the domain to your account doesn't change whose name is on the registration. Once it's in your account, update the registrant to your business. Some registrars then lock the domain against transfers for 60 days unless you opt out, so make this change after any transfer, not before.
+**Either way, check the registrant afterwards.** Moving the domain to your account doesn't change whose name is on the registration. Once it's in your account, update the registrant: your business as the organization, and an owner or manager as the named person. Some registrars then lock the domain against transfers for 60 days unless you opt out, so make this change after any transfer, not before.
 
 Be specific and be polite. Most developers aren't holding a domain hostage. They've forgotten, or they're busy.
 
@@ -57,7 +57,7 @@ Be specific and be polite. Most developers aren't holding a domain hostage. They
 - Old emails, letterhead, and listings showing the domain was used as your business's.
 - Domain history showing the registration tied to your business, if you can get it. Paid history tools keep records from before contact details were hidden.
 
-**3. Contact the registrar's support team** with that evidence. Ask what their process is for an ownership dispute. **If the registration names your business**, they can often move it to you. **If it names your developer**, most registrars can't, because on paper the developer holds the registration. They'll need the developer's agreement or a court order.
+**3. Contact the registrar's support team** with that evidence. Ask what their process is for an ownership dispute. **If the registrant is someone at your business, or your business is the organization on it**, they can often move it to you. **If the registrant is your developer**, most registrars can't, because on paper the developer holds the registration. They'll need the developer's agreement or a court order.
 
 **4. If it's stuck, talk to a lawyer.** A short letter from a lawyer settles many of these, because few freelancers want a court case over a domain.
 
@@ -67,7 +67,7 @@ Be specific and be polite. Most developers aren't holding a domain hostage. They
 
 ## If the login email is gone
 
-The domain is in your business's name, but the account email belongs to someone who left, or to a mailbox that no longer exists.
+You or your business is the registrant, but the account email belongs to someone who left, or to a mailbox that no longer exists.
 
 1. **Try the registrar's account recovery first.** Some let you change the email if you still know the password.
 2. **If not, contact support and ask for their identity verification process.** Expect to send a government ID, proof of your role at the business, and sometimes business registration documents. Some registrars ask for them notarized.
@@ -110,7 +110,7 @@ Real help never needs your passwords or your email login. Be wary of anyone who 
 
 Once your domain is back, take twenty minutes:
 
-- **Register it to your business**, with your business as the registrant, not your developer or an employee.
+- **Make your business the registrant.** Put your business in the organization field, and an owner or manager as the named person, not your developer or an employee who might leave.
 - **Use an account you own**, signed up with a role email like `domains@yourbusiness.com` that more than one person can read, not a personal inbox.
 - **Turn on two-factor authentication** on the registrar account and on the email behind it.
 - **Turn on auto-renew**, and keep a payment card on file that won't expire soon.
