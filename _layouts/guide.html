@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="case-page">
+  <div class="wrap">
+    <a class="back" href="{{ '/' | relative_url }}">← Home</a>
+    {% if page.tags %}<span class="label">{{ page.tags | join: " · " }}</span>{% endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

@@ -9,6 +9,8 @@ tags: ["AI search", "Analytics", "Technical SEO"]
 
 **Stephanie Coulter · Help center for a domain registrar · April – August 2026**
 
+*More to follow. Search Console's click-through data comes next, then before-and-after numbers once the related help center changes are live. This page will be updated as they come in.*
+
 When someone asks ChatGPT or Google how to transfer a domain or what an SSL certificate chain is, is the company's help center the source, and is the answer right? Nobody owned that question. I pulled the AI-search data from two analytics tools the company already paid for, which nobody had opened for this. I fixed the technical faults the site audits turned up, and wrote a plan that separates what can be improved from what can only be guessed at.
 
 ---

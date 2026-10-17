@@ -11,6 +11,8 @@ Stephanie Coulter's portfolio: a landing page and case studies, published with G
 | `case-studies/*.md` | The case studies. The `title`, `description`, and `tags` at the top feed the cards |
 | `_layouts/default.html` | The page wrapper: header, navigation, footer |
 | `_layouts/case-study.html` | The case study page: topics, text, and a closing prompt |
+| `guides/*.md` | Guides written for the people the work helps, not for hiring managers. Not linked from the landing page |
+| `_layouts/guide.html` | The guide page: like a case study, but links back home |
 | `assets/style.css` | Styles, with dark mode |
 | `_config.yml` | Site settings. `baseurl` becomes `""` if the site moves to its own domain |
 
