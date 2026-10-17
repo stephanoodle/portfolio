@@ -2,12 +2,25 @@ title: Stephanie Coulter
 description: Support engineer who writes help center docs, the rules AI follows, and the tests that check it.
 lang: en
 
-# Project site at stephanoodle.github.io/portfolio. Set to "" if it moves to its own domain.
+# Project site at stephanoodle.github.io/portfolio. If it moves to its own domain,
+# url becomes that domain and baseurl becomes "".
+url: "https://stephanoodle.github.io"
 baseurl: "/portfolio"
 
+# For the search and social tags jekyll-seo-tag writes into every page.
+author: Stephanie Coulter
+social:
+  name: Stephanie Coulter
+  links:
+    - https://www.linkedin.com/in/stephanie-j-coulter/
+
+# jekyll-seo-tag adds canonical links, social tags, and structured data.
+# jekyll-sitemap writes sitemap.xml for Search Console.
 # GitHub Pages turns links to .md files into links to the rendered pages.
 plugins:
   - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
 relative_links:
   enabled: true
   collections: false

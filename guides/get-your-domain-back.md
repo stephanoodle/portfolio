@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: "How to get your domain back"
-description: "What to do when a web developer, a former employee, an expired renewal, or a thief has your business's domain name."
+title: "How to get your domain back from a web developer, or after it expires"
+description: "Your web developer, a former employee, an expired renewal, or a thief has your business's domain. What to do in each case, from the registrar side."
 tags: ["Guide", "Domains"]
 ---
 

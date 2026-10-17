@@ -8,9 +8,7 @@
   {% else %}
   <title>{{ page.title }} · {{ site.title }}</title>
   {% endif %}
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta property="og:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  {% seo title=false %}
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FFD23F'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
