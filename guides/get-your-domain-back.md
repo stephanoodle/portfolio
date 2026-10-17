@@ -44,9 +44,9 @@ This is the most common case. Someone registered the domain for you, in their ow
 
 **1. Ask, in writing, for one of two things:**
 - **A move into an account you own at the same registrar.** Registrars call this an account change or a push. It's usually quick and free.
-- **The transfer code**, sometimes called an auth code or EPP code, so you can move the domain to a registrar of your choice. Ask them to unlock it at the same time. A domain usually can't move to another registrar within 60 days of being registered or transferred.
+- **The transfer code**, sometimes called an auth code or EPP code, so you can move the domain to a registrar of your choice. Ask them to unlock it at the same time. A domain usually can't move to another registrar within 60 days of being registered, transferred, or having its registrant changed.
 
-**Either way, check the registrant afterwards.** Moving the domain to your account doesn't change whose name is on the registration. Once it's in your account, update the registrant: your name, or an owner or manager's, with your business or organization in the organization field if there is one. Many registrars then lock the domain against moving to another registrar for 60 days, and few let you opt out, so make this change after any transfer, not before.
+**Either way, check the registrant afterwards.** Moving the domain to your account doesn't change the registrant unless you pick a new contact as part of the move. If you didn't, update the registrant once it's in your account: your name, or an owner or manager's, with your business or organization in the organization field if there is one. Many registrars then lock the domain against moving to another registrar for 60 days, and few let you opt out, so make this change after any transfer, not before.
 
 Be specific and be polite. Most developers aren't holding a domain hostage. They've forgotten, or they're busy.
 
@@ -111,7 +111,7 @@ Real help never needs your passwords or your email login. Be wary of anyone who 
 Once your domain is back, work through this list. Some of it takes minutes, and some, like changing the registrant or moving accounts, can take days:
 
 - **Make sure you're the registrant.** Put your own name, or an owner or manager's, as the named person, with your business or organization in the organization field if there is one. Not your developer, and not an employee who might leave.
-- **Use an account you own, with an email address that isn't on the domain itself.** If the domain lapses or its DNS breaks, mail to that domain stops too, including the renewal reminders and password resets you'd need to fix it. Use an address at another domain or a provider like Gmail or Outlook, and make it one more than one person can read, not someone's personal inbox.
+- **Use an account you own, with an email address that isn't on the domain itself.** If the domain lapses or its DNS breaks, mail to that domain stops too. You'd miss the expiration notices, and you couldn't get a transfer code, because registrars send it by email. Use an address at another domain or a provider like Gmail or Outlook, and make it one more than one person can read, not someone's personal inbox.
 - **Turn on two-factor authentication** on the registrar account and on the email behind it.
 - **Turn on auto-renew**, and keep a payment card on file that won't expire soon.
 - **Leave the transfer lock on.** Unlock it only when you're moving the domain.
