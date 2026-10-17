@@ -8,7 +8,24 @@
   {% else %}
   <title>{{ page.title }} · {{ site.title }}</title>
   {% endif %}
-  {% seo title=false %}
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- assign page_description = page.description | default: site.description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:locale" content="en">
+  <script type="application/ld+json">
+  {%- if page.url == "/" %}
+  {"@context":"https://schema.org","@type":"Person","name":{{ site.author | jsonify }},"description":{{ site.description | jsonify }},"url":{{ "/" | absolute_url | jsonify }},"sameAs":[{{ site.linkedin | jsonify }}]}
+  {%- else %}
+  {"@context":"https://schema.org","@type":"Article","headline":{{ page_title | jsonify }},"description":{{ page_description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"author":{"@type":"Person","name":{{ site.author | jsonify }},"url":{{ "/" | absolute_url | jsonify }},"sameAs":[{{ site.linkedin | jsonify }}]}}
+  {%- endif %}
+  </script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FFD23F'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

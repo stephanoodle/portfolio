@@ -7,19 +7,14 @@ lang: en
 url: "https://stephanoodle.github.io"
 baseurl: "/portfolio"
 
-# For the search and social tags jekyll-seo-tag writes into every page.
+# Used by the search and social tags in _layouts/default.html. LinkedIn is the only social profile.
 author: Stephanie Coulter
-social:
-  name: Stephanie Coulter
-  links:
-    - https://www.linkedin.com/in/stephanie-j-coulter/
+linkedin: https://www.linkedin.com/in/stephanie-j-coulter/
 
-# jekyll-seo-tag adds canonical links, social tags, and structured data.
 # jekyll-sitemap writes sitemap.xml for Search Console.
 # GitHub Pages turns links to .md files into links to the rendered pages.
 plugins:
   - jekyll-relative-links
-  - jekyll-seo-tag
   - jekyll-sitemap
 relative_links:
   enabled: true

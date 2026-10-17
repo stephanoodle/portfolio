@@ -9,12 +9,12 @@ Stephanie Coulter's portfolio: a landing page and case studies, published with G
 | `_data/kind_words.yml` | Recommendation excerpts |
 | `_data/experience.yml` | The experience timeline |
 | `case-studies/*.md` | The case studies. The `title`, `description`, and `tags` at the top feed the cards |
-| `_layouts/default.html` | The page wrapper: header, navigation, footer |
+| `_layouts/default.html` | The page wrapper: header, navigation, footer, and the search and social tags (canonical link, `og:` tags for LinkedIn, structured data). No Twitter tags |
 | `_layouts/case-study.html` | The case study page: topics, text, and a closing prompt |
 | `guides/*.md` | Guides written for the people the work helps, not for hiring managers. Not linked from the landing page |
 | `_layouts/guide.html` | The guide page: like a case study, but links back home |
 | `assets/style.css` | Styles, with dark mode |
-| `_config.yml` | Site settings, including `jekyll-seo-tag` (canonical links, social tags, structured data) and `jekyll-sitemap`. If the site moves to its own domain, `url` becomes that domain and `baseurl` becomes `""` |
+| `_config.yml` | Site settings, including `jekyll-sitemap`, and the author and LinkedIn link the search and social tags in `default.html` use. If the site moves to its own domain, `url` becomes that domain and `baseurl` becomes `""` |
 
 ## Adding a case study
 
