@@ -1,15 +1,15 @@
 ---
 layout: case-study
 title: "Restructuring a help center around what readers are trying to do"
-description: "Restructured nine categories of a 500-article help center around what readers are trying to do."
+description: "Restructured more than a dozen categories of a 500-article help center around what readers are trying to do."
 tags: ["Information architecture", "Diátaxis"]
 ---
 
 # Case study: restructuring a help center around what readers are trying to do
 
-**Stephanie Coulter · DNSimple, a domain registrar · January – September 2026**
+**Stephanie Coulter · DNSimple, a domain registrar · January – October 2026**
 
-A developer-facing help center of more than 500 articles had grown one article at a time, with no shared rule for what kind of article went where. I led a category-by-category restructure around the Diátaxis framework, from the written standard to a hub page for every category, and restructured nine categories over nine months.
+A developer-facing help center of more than 500 articles had grown one article at a time, with no shared rule for what kind of article went where. I led a category-by-category restructure around the Diátaxis framework, from the written standard to a hub page for every category, and restructured more than a dozen categories over ten months.
 
 ---
 
@@ -32,8 +32,11 @@ The categories had the same problem at a larger scale. There was no consistent p
 | [SSL certificates](https://support.dnsimple.com/categories/ssl-certificates/) | Explanation articles, then how-to, reference, glossary, and troubleshooting in coordinated releases, and a follow-up audit across 52 files |
 | [Name servers](https://support.dnsimple.com/categories/name-servers/) | Restructured into getting started, explanation, and how-to sections, with a glossary |
 | [Contacts](https://support.dnsimple.com/categories/contacts/), [WHOIS Privacy](https://support.dnsimple.com/categories/whois-privacy/), [Templates](https://support.dnsimple.com/categories/templates/), [Connectors](https://support.dnsimple.com/categories/connectors/) | Restructures, new articles, and four pillar pages in one coordinated set of changes |
+| [Secondary DNS](https://support.dnsimple.com/categories/secondary-dns/) | Troubleshooting, field reference, and glossary articles |
+| [API](https://support.dnsimple.com/categories/api/) | Every Sandbox tutorial example run before publishing, reference articles with verified limits and errors, a troubleshooting guide, a token permissions reference, a glossary, and a pillar page |
+| [Integrations](https://support.dnsimple.com/categories/integrations/) | Explanation, tutorial, how-to, and reference articles across integrated DNS providers, Heroku, Cloudflare, Terraform, and more, with a troubleshooting guide, glossary, and pillar page |
 
-**3. Went back for consistency.** A restructure done over nine months drifts. I aligned article headings with their titles, brought the pillar pages into line with each other, and then wrote the pillar page convention into the rules. The shape of a pillar page had existed only as precedent inside the pages themselves, which is how it drifted. The new rule includes the one requirement that keeps a pillar current: a new article gets added to its category's pillar in the same change.
+**3. Went back for consistency.** A restructure done over months drifts. I aligned article headings with their titles, brought the pillar pages into line with each other, and then wrote the pillar page convention into the rules. The shape of a pillar page had existed only as precedent inside the pages themselves, which is how it drifted. The new rule includes the one requirement that keeps a pillar current: a new article gets added to its category's pillar in the same change.
 
 ## What didn't work the first time
 
@@ -41,7 +44,7 @@ The first pass at the name servers category was six pull requests in January, an
 
 ## What shipped
 
-- **Nine categories restructured:** DNS, DNSSEC, Domains and Transfers, SSL certificates, Name Servers, Contacts, WHOIS Privacy, Templates, and Connectors. Secondary DNS is in progress
+- **More than a dozen categories restructured:** DNS, DNSSEC, Domains and Transfers, TLDs, SSL certificates, Name Servers, Contacts, WHOIS Privacy, Templates, Connectors, Secondary DNS, API, and Integrations. A second pass over the earliest categories is in progress
 - **A pillar page for each**, following one written convention
 - **The standard in the contributing guidelines and the AI writing rules,** so new articles, including AI-drafted ones, start in the right shape
 
