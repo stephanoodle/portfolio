@@ -2,6 +2,7 @@
 layout: case-study
 title: "Answering technical tickets without waiting on engineering"
 description: "Used AI to check product code against the docs, so support could find the cause and fix it."
+image: /assets/og/technical-tickets-with-ai.png
 tags: ["Support", "AI"]
 ---
 

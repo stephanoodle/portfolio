@@ -20,6 +20,12 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
   <meta property="og:locale" content="en">
+  {%- if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:alt" content="{{ page_title | escape }}">
+  {%- endif %}
   <script type="application/ld+json">
   {%- if page.url == "/" %}
   {"@context":"https://schema.org","@type":"Person","name":{{ site.author | jsonify }},"description":{{ site.description | jsonify }},"url":{{ "/" | absolute_url | jsonify }},"sameAs":[{{ site.linkedin | jsonify }}]}

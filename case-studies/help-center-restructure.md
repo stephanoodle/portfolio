@@ -2,6 +2,7 @@
 layout: case-study
 title: "Restructuring a help center around what readers are trying to do"
 description: "Restructured more than a dozen categories of a 500-article help center around what readers are trying to do."
+image: /assets/og/help-center-restructure.png
 tags: ["Information architecture", "Diátaxis"]
 ---
 

@@ -2,6 +2,7 @@
 layout: case-study
 title: "When the password is right and the email is dead"
 description: "Found why customers with the right password were locked out, and wrote the proposal that led to a fix."
+image: /assets/og/account-recovery-dead-email.png
 tags: ["Support to product", "Account access"]
 ---
 

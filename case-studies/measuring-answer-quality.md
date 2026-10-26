@@ -2,6 +2,7 @@
 layout: case-study
 title: "Measuring whether documentation answers correctly"
 description: "Built an evaluation from real customer questions, and let the data correct my conclusions twice."
+image: /assets/og/measuring-answer-quality.png
 tags: ["Evaluation", "Search", "AI retrieval"]
 ---
 

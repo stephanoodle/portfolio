@@ -2,6 +2,7 @@
 layout: case-study
 title: "Rules for AI-drafted documentation, and why rules aren't enough"
 description: "Wrote the rules AI follows when drafting documentation, then audited them and found why rules aren't enough."
+image: /assets/og/ai-writing-rules.png
 tags: ["AI governance", "Docs as code"]
 ---
 
