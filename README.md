@@ -12,7 +12,7 @@ Stephanie Coulter's portfolio: a landing page and case studies, published with G
 | `_layouts/default.html` | The page wrapper: header, navigation, footer, and the search and social tags (canonical link, `og:` tags for LinkedIn, structured data). `og:image` only on pages with an `image`, sized for 1600 × 1200. No Twitter tags |
 | `_layouts/case-study.html` | The case study page: topics, text, and a closing prompt |
 | `services.md` | Services and prices, at `/services/`. Linked from the sidebar and the landing page. Prices match the services sheet and support sheet in the Professional Development repo |
-| `guides/*.md` | Guides written for the people the work helps, not for hiring managers. Not linked from the landing page |
+| `guides/*.md` | Guides written for the people the work helps. The domain guide isn't linked from the landing page; the Open Library API guide is, under Writing samples, API documentation (Nov 20, 2026) |
 | `_layouts/guide.html` | The guide page: like a case study, but links back home |
 | `assets/style.css` | Styles, with dark mode |
 | `assets/og/*.png` | Link-preview pictures, one per case study, 1600 × 1200. The same cards as the Contra projects, copied from `job-search/contra-media/` in the Professional Development repo |

@@ -1,4 +1,4 @@
-# Help center articles I wrote, live on support.dnsimple.com.
+# Help center articles I wrote, live on support.dnsimple.com, and guides for public APIs.
 # Grouped by the kind of reading they're for.
 
 - group: How-to guides
@@ -52,3 +52,10 @@
     - title: SSL Certificate Glossary
       url: https://support.dnsimple.com/articles/ssl-certificates-glossary/
       summary: Certificate terms defined in plain language.
+
+- group: API documentation
+  note: Guides for public APIs, written in each project's own style.
+  articles:
+    - title: Looking Up a Book by ISBN
+      url: https://stephanoodle.github.io/portfolio/guides/open-library-isbn-lookup.html
+      summary: A book's title, author, and cover from its ISBN, with the Open Library API, and the gotchas.
