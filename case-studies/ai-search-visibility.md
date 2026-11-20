@@ -10,8 +10,6 @@ tags: ["AI search", "Analytics", "Technical SEO"]
 
 **Stephanie Coulter · Help center for a domain registrar · April – August 2026**
 
-*More to follow. Search Console's click-through data comes next, then before-and-after numbers once the related help center changes are live. This page will be updated as they come in.*
-
 When someone asks ChatGPT or Google how to transfer a domain or what an SSL certificate chain is, is the company's help center the source, and is the answer right? Nobody owned that question. I pulled the AI-search data from two analytics tools the company already paid for, which nobody had opened for this. I fixed the technical faults the site audits turned up, and wrote a plan that separates what can be improved from what can only be guessed at.
 
 ---
@@ -40,7 +38,7 @@ AI assistants increasingly answer customers' questions before they ever reach a 
 
 ## What the numbers can't tell you
 
-- **Impressions aren't clicks.** About 5 million citations against about a thousand AI-referred visitors in a year suggests most exposure never becomes a visit. But the two tools count different things, so that ratio isn't measured yet. The click-through data from the same report comes next.
+- **Impressions aren't clicks.** About 5 million citations against about a thousand AI-referred visitors in a year suggests most exposure never becomes a visit. But the two tools count different things, and Google's report can't settle it: it counts impressions only, with no clicks. So the ratio can't be measured from Google's side.
 - **The Google report is in beta.** Treat its figure as an order of magnitude.
 - **No dashboard says whether the answer was right.** Search Console can tell you how often you're cited. Nothing in it can tell you whether the answer beside your name was correct.
 
