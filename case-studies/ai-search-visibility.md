@@ -2,6 +2,7 @@
 layout: case-study
 title: "Measuring how often AI answers cite the help center"
 description: "Found about 5 million AI-answer citations a quarter in dashboards nobody had opened, and the question none of them can answer."
+image: /assets/og/ai-search-visibility.png
 tags: ["AI search", "Analytics", "Technical SEO"]
 ---
 

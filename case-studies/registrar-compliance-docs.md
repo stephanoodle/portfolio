@@ -2,6 +2,7 @@
 layout: case-study
 title: "Turning registry rules into steps customers can follow"
 description: "Turned ICANN, NIS2, and registry changes into steps customers can follow."
+image: /assets/og/registrar-compliance-docs.png
 tags: ["Compliance", "ICANN", "NIS2"]
 ---
 
